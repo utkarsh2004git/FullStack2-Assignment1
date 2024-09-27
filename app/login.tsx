@@ -27,7 +27,9 @@ export default function RegisterScreen() {
         secureTextEntry
       />
 
-
+<TouchableOpacity>
+        <Text style={styles.alreadyAccount2}>Forgot your password?</Text>
+      </TouchableOpacity>
       {/* Sign Up Button */}
       <TouchableOpacity style={styles.signUpButton}>
         <Text style={styles.signUpText}>Sign in</Text>
@@ -98,6 +100,11 @@ const styles = StyleSheet.create({
   },
   alreadyAccount: {
     textAlign: 'center',
+    color: '#2563EB',
+    marginBottom: 30,
+  },
+  alreadyAccount2: {
+    textAlign: 'right',
     color: '#2563EB',
     marginBottom: 30,
   },
